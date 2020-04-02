@@ -9,6 +9,9 @@ export class AppComponent {
   title = 'angular-maps';
 
 
-  lat = 45.511348;
-  lng = 9.176766;
+  lat = 45.506738;
+  lng = 9.190766;
+
+  lat2 = 45.511250;
+  lng2 = 9.176744;
 }
