@@ -16,6 +16,7 @@ export class AppComponent {
   lng2 = 9.176744;
 
   color = 'red';
+  colorB = 'green';
 
 
   redOnClick():boolean
@@ -36,5 +37,66 @@ export class AppComponent {
     this.color = 'green';
     return false;
   }
+
+
+  redOnClickB():boolean
+  {
+    this.colorB = 'red';
+    return false;
+  }
+
+  blueOnClickB():boolean
+  {
+    this.colorB = 'blue';
+    return false;
+  }
+
+
+  greenOnClickB():boolean
+  {
+    this.colorB = 'green';
+    return false;
+  }
+
+
+
+    icon =
+    {
+      url:'./assets/img/cat_acrobat.ico',
+      scaledSize:
+      {
+        width: 60,
+        height: 60
+      }
+    };
+
+
+    iconFire =
+    {
+      url:'/assets/img/fire.ico',
+      scaledSize:
+      {
+        width: 60,
+        height: 60
+      }
+    };
+
+
+     triangle: Array<Point> =
+  [
+    {lng:9.1, lat:45.5},
+    {lng:9.0, lat:45.6},
+    {lng:9.0, lat:45.4}
+  ]
+
+
+  rect: Array<Point> =
+  [
+    {lng:9.2, lat:45.6},
+    {lng:9.2, lat:45.5},
+    {lng:9.1, lat:45.5},
+    {lng:9.1, lat:45.6}
+
+  ]
 
 }

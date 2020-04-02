@@ -2,9 +2,9 @@
 <!--Centriamo la mappa alle nostre coordinate-->
 <agm-map [latitude]="lat" [longitude]="lng">
   <!--Mettiamo un marker alle nostre coordinate-->
-  <agm-marker [latitude]="lat" [longitude]="lng">
+  <agm-marker [latitude]="lat" [longitude]="lng" [iconUrl]="icon">
   </agm-marker>
-  <agm-marker [latitude]="lat2" [longitude]="lng2">
+  <agm-marker [latitude]="lat2" [longitude]="lng2" [iconUrl]="iconFire">
   </agm-marker>
 
   <agm-circle [latitude]="lat" [longitude]="lng"
@@ -17,8 +17,18 @@
       [fillColor]="color">
   </agm-circle>
 
+
+  <agm-polygon [paths]="triangle" [fillColor]="'red'">
+</agm-polygon>
+<agm-polygon [paths]="rect" [fillColor]="colorB">
+</agm-polygon>
 </agm-map>
 
 <button (click)="redOnClick()">Rosso</button>
 <button (click)="blueOnClick()">Blue</button>
 <button (click)="greenOnClick()">Verde</button>
+
+
+<button (click)="redOnClickB()">Rosso</button>
+<button (click)="blueOnClickB()">Blue</button>
+<button (click)="greenOnClickB()">Verde</button>
