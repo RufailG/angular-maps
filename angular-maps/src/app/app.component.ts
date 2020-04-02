@@ -14,4 +14,27 @@ export class AppComponent {
 
   lat2 = 45.511250;
   lng2 = 9.176744;
+
+  color = 'red';
+
+
+  redOnClick():boolean
+  {
+    this.color = 'red';
+    return false;
+  }
+
+  blueOnClick():boolean
+  {
+    this.color = 'blue';
+    return false;
+  }
+
+
+  greenOnClick():boolean
+  {
+    this.color = 'green';
+    return false;
+  }
+
 }

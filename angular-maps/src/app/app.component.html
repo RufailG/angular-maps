@@ -6,4 +6,19 @@
   </agm-marker>
   <agm-marker [latitude]="lat2" [longitude]="lng2">
   </agm-marker>
+
+  <agm-circle [latitude]="lat" [longitude]="lng"
+      [radius]="5000"
+      [fillColor]="color">
+  </agm-circle>
+
+  <agm-circle [latitude]="lat2" [longitude]="lng2"
+      [radius]="5000"
+      [fillColor]="color">
+  </agm-circle>
+
 </agm-map>
+
+<button (click)="redOnClick()">Rosso</button>
+<button (click)="blueOnClick()">Blue</button>
+<button (click)="greenOnClick()">Verde</button>
